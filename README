@@ -1,0 +1,17 @@
+true is dark / black
+false is light / white
+
+WHITE PIECES:
+& - king
+W - queen
+$ - bishop
+N - knight
+] - rook
+O - pawn
+BLACK PIECES:
+% - king
+Q - queen
+# - bishop
+K - knight
+[ - rook
+@ - pawn
