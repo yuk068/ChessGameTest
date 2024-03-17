@@ -15,3 +15,16 @@ Q - queen
 K - knight
 [ - rook
 @ - pawn
+
+To be implemented:
++Checks, castling, enpassant, promotion
++Move validation relating exposing the king to enemy's sight
++Checkmate, stalemate, draw
++50 moves rule, threefold repetition
++An info tab for white, black (or both) player(s) to keep track of
+captured pieces, number of moves, etc...
+?A timer
+?GUI
+
+Known issues:
+Exception when pawns move to the 7th rank: Pawn.getLegalMoves (out of bound)

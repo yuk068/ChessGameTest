@@ -37,7 +37,6 @@ public abstract class Piece {
 
     public abstract int[] getLegalMoves();
 
-
     public abstract boolean isPhasing(int id);
 
     public abstract int[] getSightProtecting();

@@ -51,6 +51,7 @@ public class Main {
             input = in.nextLine().toUpperCase();
             int idMove = Utility.coordinateToId(input);
             if (!squares[idSelect].getPiece().move(idMove)) {
+                Board.updateBoard();
                 continue;
             }
             Board.updateBoard();
