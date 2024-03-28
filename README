@@ -31,7 +31,7 @@ captured pieces, number of moves, etc...
 
 Known issues:
 Exception when pawns move to the 7th rank: Pawn.getLegalMoves (out of bound)
-
+[RESOLVED]
 Note:
 Dropped to start from scratch, i completely forgot that matrices exist, this
 project is still doable but its just too much work and its a mess already
