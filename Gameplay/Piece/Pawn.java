@@ -52,9 +52,9 @@ public class Pawn extends Piece {
         int tolerance = isBlackWhite() ? -8 : 8;
         int[] diagonal = isBlackWhite() ? new int[]{-9, -7} : new int[]{7, 9};
 
-        if (!Board.getSquares()[currentSquareId + tolerance].isOccupied()) {
+        if (isValidId(currentSquareId + tolerance) && !Board.getSquares()[currentSquareId + tolerance].isOccupied()) {
             pawnMoves[count++] = currentSquareId + tolerance;
-            if (isFirstMove() && !Board.getSquares()[currentSquareId + 2 * tolerance].isOccupied()) {
+            if (isFirstMove() && isValidId(currentSquareId + 2 * tolerance) && !Board.getSquares()[currentSquareId + 2 * tolerance].isOccupied()) {
                 pawnMoves[count++] = currentSquareId + 2 * tolerance;
             }
         }
